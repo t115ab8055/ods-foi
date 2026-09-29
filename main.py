@@ -31,5 +31,5 @@ for index, data in enumerate(parse_data, 1):
 with open("評議決定書.csv", "w", newline="", encoding="utf-8-sig") as file:
     writer = csv.writer(file)
 
-    writer.writerow(["序號", "文件類型", "案號與連結", "評議日期", "爭議類型"])
+    writer.writerow(["序號", "評議類別", "評議字號", "評議字號連結", "評議決定日期", "爭議類型"])
     writer.writerows(parse_data)
